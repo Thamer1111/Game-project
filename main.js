@@ -1,14 +1,13 @@
-//Adding sounds
-let startSound = new Audio("sounds/start.mp3");
-let loseSound = new Audio("sounds/lose.mp3");
+// Adding start and losing sounds
+let startSound = new Audio("sounds/start.mp3")
+let loseSound = new Audio("sounds/lose.mp3")
 
 function startGameSound() {
-    startSound.play();
+    startSound.play()
 }
 
-// تشغيل صوت الخسارة
 function gameOverSound() {
-    loseSound.play();
+    loseSound.play()
 }
 
 document.addEventListener("DOMContentLoaded", () => {

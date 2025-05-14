@@ -244,9 +244,10 @@ document.addEventListener("DOMContentLoaded", () => {
             !squares[pacmanCurrentIndex].classList.contains("scared-ghost")) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener("keyup", movePacman)
-            setTimeout(function () {
                 gameOverSound()
+            setTimeout(function () {
                 alert("Game Over")
+                location.reload()
             }, 500)
         }
     }
@@ -258,6 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.removeEventListener("keyup", movePacman)
             setTimeout(function () {
                 alert("You have WON!")
+                location.reload()
             }, 500)
         }
     }
